@@ -39,3 +39,7 @@ footer{
   padding: 1rem 0.5rem;
   font-size: 0.75rem;
 }
+footer > nav > a{
+  color: white;
+  justify-content: space-between;
+}
