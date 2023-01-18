@@ -1,3 +1,4 @@
+import ItemListContainer from "./ItemListContainer"
 
 const people = [
   {
@@ -21,6 +22,8 @@ const people = [
 ]
 const Main = () => {
   return (
+    <main>
+      <ItemListContainer/>
     <ul className="divide-y divide-gray-200">
       {people.map((person) => (
         <li key={person.email} className="py-4 flex">
@@ -32,6 +35,7 @@ const Main = () => {
         </li>
       ))}
     </ul>
+    </main>
   )
 }
 export default Main

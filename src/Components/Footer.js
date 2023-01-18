@@ -3,7 +3,9 @@ const Footer = () => {
     return(
         <footer>
       <p>Copyright &copy; 2022</p>
-      <Nav/>
+      <Nav  
+      textLinkFooter= "Facebook"
+      hrefLinkFooter= "https://www.facebook.com/"/>
     </footer>
     )
 }

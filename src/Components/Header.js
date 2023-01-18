@@ -1,9 +1,10 @@
 import Nav from "./Nav"
 const Header = () => {
+  const isHeader = true
 return(
-    <header>
-      <h1>Titulo</h1>
-     <Nav isHeader="true" />
+    <header className="header">
+      <h1 className="header__title">Titulo</h1>
+     <Nav isHeader={isHeader}/>
     </header>
 )
 }

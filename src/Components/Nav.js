@@ -1,19 +1,22 @@
-const Nav = (parametro) => {
-    console.log (parametro)
-    if(parametro.isHeader === "true"){
+const Nav = (props) => {
+  const {isHeader, textLinkFooter, hrefLinkFooter} = props
+    if(isHeader){
     return(
-        <nav>
-        <a href="#">link</a>
-        <a href="#">link</a>
-        <a href="#">link</a>
+        <nav className="header__navbar">
+        <a className="header__link" href="#">link</a>
+        <a className="header__link" href="#">link</a>
+        <a className="header__link" href="#">link</a>
+        <span className="material-icons">shopping_cart</span>
       </nav>
     )
 } else{
-    <nav>
-    <a href="#">facebook</a>
+  return (
+    <nav className="header__navbar">
+    <a href={hrefLinkFooter}>{textLinkFooter}</a>
     <a href="#">Instagram</a>
     <a href="#">Youtube</a>
   </nav>
+  )
 }
 }
 export default Nav
