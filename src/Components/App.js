@@ -8,8 +8,9 @@ function App() {
     <>
     <Header/>
     <Main/>
-    <Footer/>
     <ItemListContainer greeting="Hola item"/>
+    <Footer/>
+    
     
     </>
 

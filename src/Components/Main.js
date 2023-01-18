@@ -22,7 +22,7 @@ const people = [
 ]
 const Main = () => {
   return (
-    <main>
+    <main className="main__cards">
       <ItemListContainer/>
     <ul className="divide-y divide-gray-200">
       {people.map((person) => (
